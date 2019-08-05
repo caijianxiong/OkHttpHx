@@ -14,6 +14,7 @@ import okhttp3.Response;
  * @Describe
  */
 public abstract class ClassFormatCallBack<T> extends Callback<T> {
+
     @Override
     public T parseNetworkResponse(Response response, int id) throws IOException {
         String string = response.body().string();
